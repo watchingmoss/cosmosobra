@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creador de rostros</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/fc59c9fff4.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Creador de rostros</h1>
+    <div class="acciones">
+      <button id="btn-frente" title="Traer al frente"><i class="fa-solid fa-arrow-up"></i></button>
+      <button id="btn-atras" title="Enviar atrás"><i class="fa-solid fa-arrow-down"></i></button>
+      <button id="btn-borrar" title="Borrar la pieza seleccionada (Supr)"><i class="fa-solid fa-trash-can"></i></button>
+      <button id="btn-exportar" class="primario"><i class="fa-solid fa-file-export"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <aside id="banco" aria-label="Banco de piezas"></aside>
+    <section id="zona-lienzo">
+      <div id="lienzo"></div>
+      <p class="ayuda">Arrastra piezas al lienzo. Toca una para escalarla o rotarla.</p>
+    </section>
+  </main>
+  
+  <button id="btn-limpiar" title="Vaciar el lienzo" style="height:fit-content; width: fit-content; position:absolute; right:0; bottom:0; margin: 10px;" >Limpiar lienzo</button>
+
+  <script src="https://unpkg.com/konva@9/konva.min.js"></script>
+  <script src="piezas.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
